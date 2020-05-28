@@ -5,5 +5,6 @@ get '/' do
 end
 
 post '/convertir' do
-  "El numero en romano es:"+params[:numero]
+  @numero_a_convertir = params[:numero]
+  "El numero en romano es:"+@numero_a_convertir
 end
